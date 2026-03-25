@@ -1,0 +1,23 @@
+prompt_file: "prompts/prompt.txt"
+save_dir: "outputs"
+selected: "baseline"
+
+baseline:
+  temperature: 0.7
+  max_tokens: 1024
+  enable_thinking: true
+
+temp_low:
+  temperature: 0.2
+  max_tokens: 512
+  enable_thinking: true
+
+temp_high:
+  temperature: 1.0
+  max_tokens: 1024
+  enable_thinking: true
+
+long_output:
+  temperature: 0.7
+  max_tokens: 2048
+  enable_thinking: true

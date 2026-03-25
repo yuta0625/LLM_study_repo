@@ -1,0 +1,37 @@
+[project]
+name = "llm-exp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "accelerate>=1.13.0",
+    "bitsandbytes>=0.49.2",
+    "peft>=0.18.1",
+    "tokenizers>=0.22.2",
+    "torch==2.5.1+cu121",
+    "torchaudio==2.5.1+cu121",
+    "torchvision==0.20.1+cu121",
+    "transformers",
+]
+
+[tool.uv.sources]
+transformers = { git = "https://github.com/huggingface/transformers.git" }
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu121"
+default = true
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+name = "pypi"
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu121"
+name = "pytorch"
+
+[tool.uv]
+index-strategy = "unsafe-best-match"

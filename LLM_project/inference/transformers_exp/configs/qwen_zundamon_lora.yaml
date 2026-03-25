@@ -1,0 +1,6 @@
+model:
+  name: Qwen/Qwen3.5-2B
+
+# 現状は学習済みのadaptersをpathで指定してくる方針で
+adapter:
+  path: /Users/ohya/LLM_onest/LLM_project/training/outputs/adapters
