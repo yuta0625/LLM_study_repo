@@ -1,4 +1,4 @@
-# LLM_onest
+# LLM_study
 
 LLMの学習・推論実験リポジトリ。HuggingFaceのずんだもんデータセットを使いQwen3.5-2BにLoRA SFTを施し、TransformersとvLLM両方で推論する一連のパイプラインを実装している。
 
